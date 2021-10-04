@@ -1,0 +1,15 @@
+{
+  "name": "HandicraftZone",
+  "version": "1.0.0",
+  "description": "e-commerce application",
+  "main": "server.js",
+  "scripts": {
+    "start": "node backend/server"
+  },
+  "repository": "https://github.com/TechPriyamvad/HandicraftZone.git",
+  "author": "priyamvad acharya",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
