@@ -1,6 +1,6 @@
 const products = [
   {
-    _id: "1",
+    id: "1",
     name: "Airpods Wireless Bluetooth Headphones",
     image: "https://m.media-amazon.com/images/I/71IPFP9WJIL._SL1500_.jpg",
     description:
@@ -13,7 +13,7 @@ const products = [
     numReviews: 4,
   },
   {
-    _id: "2",
+    id: "2",
     name: "iPhone 11 Pro 256GB Memory",
     image: "https://m.media-amazon.com/images/I/714Mg+6MoFL._SL1500_.jpg",
     description:
@@ -26,7 +26,7 @@ const products = [
     numReviews: 4,
   },
   {
-    _id: "3",
+    id: "3",
     name: "Cannon EOS 80D DSLR Camera",
     image: "https://m.media-amazon.com/images/I/61VFkA-rceL._SL1000_.jpg",
     description:
@@ -39,7 +39,7 @@ const products = [
     numReviews: 3,
   },
   {
-    _id: "4",
+    id: "4",
     name: "Sony Playstation 4 Pro White Version",
     image: "https://boip.in/13680-thickbox_default/sony-playstation-4-pro-ps4-pro-1tb-console-complete-set-sealed-pack-imported.jpg",
     description:
@@ -52,7 +52,7 @@ const products = [
     numReviews: 3,
   },
   {
-    _id: "5",
+    id: "5",
     name: "Logitech G-Series Gaming Mouse",
     image: "https://m.media-amazon.com/images/I/61UxfXTUyvL._SL1500_.jpg",
     description:
@@ -65,7 +65,7 @@ const products = [
     numReviews: 2,
   },
   {
-    _id: "6",
+    id: "6",
     name: "Amazon Echo Dot 3rd Generation",
     image: "https://m.media-amazon.com/images/I/61WUqJd4dfS._SL1000_.jpg",
     description:
