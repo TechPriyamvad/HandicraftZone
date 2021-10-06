@@ -15,7 +15,7 @@ import { useDispatch, useSelector } from "react-redux";
 import Loader from "../Loader/Loader.jsx";
 import Message from "../Message/Message.jsx";
 
-const ProductScreen = ({ history,match }) => {
+const ProductScreen = ({ history, match }) => {
   const [qty, setQty] = useState(0);
   const dispatch = useDispatch();
   const productDetails = useSelector((state) => state.productDetails);
@@ -27,10 +27,9 @@ const ProductScreen = ({ history,match }) => {
   }, [dispatch, match]);
 
   const addToCartHandler = () => {
-    history.push(`/cart/${match.params.id}?qty=${qty}`)
-  }
+    history.push(`/cart/${match.params.id}?qty=${qty}`);
+  };
 
-  console.log(Array(product.countInStock).keys());
   return (
     <>
       <Link className="btn btn-dark my-3" to="/">
@@ -106,7 +105,7 @@ const ProductScreen = ({ history,match }) => {
 
                 <ListGroup.Item>
                   <Button
-                  onClick={addToCartHandler}
+                    onClick={addToCartHandler}
                     className="btn-block"
                     type="button"
                     disabled={product.countInStock === 0}
