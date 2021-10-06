@@ -5,6 +5,7 @@ import {
   PRODUCT_LIST_FAIL,
 } from "../constants/productConstants";
 
+// invoked from component and then dispatch action to reducer
 export const listProducts = () => async (dispatch) => {
   try {
     dispatch({ type: PRODUCT_LIST_REQUEST });
