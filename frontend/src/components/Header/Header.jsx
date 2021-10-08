@@ -12,6 +12,8 @@ const Header = () => {
 
   const logoutHandler = () => {
     dispatch(logout())
+    dispatch({type:'USER_DETAILS_RESET'})
+    dispatch({type:'USER_LIST_MY_RESET'})
   }
 
   return (
