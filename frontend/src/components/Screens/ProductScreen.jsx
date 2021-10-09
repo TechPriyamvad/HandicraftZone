@@ -15,6 +15,7 @@ import { useDispatch, useSelector } from "react-redux";
 import Loader from "../Loader/Loader.jsx";
 import Message from "../Message/Message.jsx";
 import { PRODUCT_CREATE_REVIEW_RESET } from "../../constants/productConstants";
+import Meta from "../Meta/Meta";
 
 const ProductScreen = ({ history, match }) => {
   const [rating, setRating] = useState(0)
@@ -69,6 +70,7 @@ const ProductScreen = ({ history, match }) => {
         <Message variant="danger"></Message>
       ) : (
         <>
+        <Meta title={product.name} />
         <Row>
           <Col md={6}>
             <Image src={product.image} alt={product.name} fluid />
