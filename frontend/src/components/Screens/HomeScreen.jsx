@@ -6,7 +6,9 @@ import { listProducts } from "../../actions/productActions";
 import Message from "../Message/Message";
 import Loader from "../Loader/Loader";
 
-const HomeScreen = () => {
+const HomeScreen = ({match}) => {
+
+  const keyword = match.params.keyword
   // call action creator from component using useDispatch hook
   const dispatch = useDispatch();
   // accesing product from store using useSelector hook
@@ -14,8 +16,8 @@ const HomeScreen = () => {
   const { loading, error, products } = productList;
 
   useEffect(() => {
-    dispatch(listProducts());
-  }, [dispatch]);
+    dispatch(listProducts(keyword));
+  }, [dispatch,keyword]);
 
   return (
     <>
